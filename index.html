@@ -1,11 +1,159 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>UTN - Colores de Boca</title>
+    <style>
+        :root {
+            --boca-azul: #003087;
+            --boca-amarillo: #ffcc00;
+            --boca-azul-claro: #1c60a5;
+            --gris-fondo: #f4f4f4;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, var(--boca-azul) 0%, var(--boca-azul-claro) 70%, #0a2d62 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.2rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            background: rgba(255,255,255,.09);
+            border: 3px solid var(--boca-amarillo);
+            border-radius: 16px;
+            box-shadow: 0 12px 28px rgba(0,0,0,.36);
+            overflow: hidden;
+        }
+
+        header {
+            background: var(--boca-azul);
+            border-bottom: 4px solid var(--boca-amarillo);
+            padding: 1.2rem 1.5rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: clamp(1.6rem, 4vw, 2.6rem);
+            letter-spacing: .5px;
+        }
+
+        header p {
+            color: var(--boca-amarillo);
+            font-weight: 700;
+            margin-top: .35rem;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(200px, 1fr));
+            gap: 1.05rem;
+            padding: 1.2rem;
+            background: rgba(255,255,255,.11);
+        }
+
+        .card {
+            background: rgba(0,0,0,.2);
+            border: 2px solid var(--boca-amarillo);
+            border-radius: 10px;
+            padding: 1rem;
+        }
+
+        .card h2 {
+            margin-bottom: .6rem;
+            color: var(--boca-amarillo);
+        }
+
+        .card ul {
+            list-style: inside;
+            line-height: 1.6;
+        }
+
+        .card li {
+            margin-bottom: .45rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: .85rem;
+            background: var(--boca-azul);
+            border-top: 4px solid var(--boca-amarillo);
+            color: #f8f8f8;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 760px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            body {
+                padding: .5rem;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Pagina De Prueba nr2 </h1>
+    <section class="container">
+        <header>
+            <h1>UTN - Universidad Tecnológica Nacional</h1>
+            <p>Adaptación en colores de Boca Juniors</p>
+        </header>
+
+        <main class="content">
+            <article class="card">
+                <h2>¿Qué es la UTN?</h2>
+                <p>La Universidad Tecnológica Nacional (UTN) es la casa de altos estudios públicos líder en ingeniería y tecnología de Argentina.</p>
+                <ul>
+                    <li>Escuelas en todo el país</li>
+                    <li>Fuerte vínculo con industria y comunidad</li>
+                    <li>Formación en ciencias aplicadas y gestión</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Colores inspirados en Boca</h2>
+                <ul>
+                    <li>Azul oscuro: `#003087`</li>
+                    <li>Amarillo: `#ffcc00`</li>
+                    <li>Azul claro: `#1c60a5`</li>
+                </ul>
+                <p>Estos tonos se usan en la web para generar contraste deportivo y moderno.</p>
+            </article>
+
+            <article class="card">
+                <h2>Valores UTN</h2>
+                <ul>
+                    <li>Integridad</li>
+                    <li>Solidaridad</li>
+                    <li>Innovación tecnológica</li>
+                    <li>Desarrollo sustentable</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>Contacto</h2>
+                <p>📍 MITRA 1246, CABA | 🌐 www.utn.edu.ar</p>
+                <p>🎓 Campus virtual y presencial en todo el país.</p>
+            </article>
+        </main>
+
+        <footer>
+            Página demo usando colores Boca y estructura UTN
+        </footer>
+    </section>
 </body>
 </html>
