@@ -1,188 +1,150 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UTN - Trenque Lauquen</title>
-
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: 'Segoe UI', sans-serif;
-    }
-
-    body {
-        background: #f4f6f9;
-        color: #333;
-    }
-
-    header {
-        background: linear-gradient(135deg, #003366, #0055a5);
-        color: white;
-        padding: 60px 20px;
-        text-align: center;
-        animation: fadeIn 1s ease-in;
-    }
-
-    header h1 {
-        font-size: 2.5rem;
-    }
-
-    nav {
-        position: sticky;
-        top: 0;
-        background: #002244;
-        padding: 12px;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        z-index: 1000;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-
-    nav a:hover {
-        color: #00c3ff;
-    }
-
-    .container {
-        max-width: 1000px;
-        margin: auto;
-        padding: 20px;
-    }
-
-    .card {
-        background: white;
-        padding: 20px;
-        margin: 20px 0;
-        border-radius: 12px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        transition: transform 0.3s;
-    }
-
-    .card:hover {
-        transform: translateY(-5px);
-    }
-
-    h2 {
-        margin-bottom: 10px;
-        color: #003366;
-    }
-
-    ul {
-        padding-left: 20px;
-    }
-
-    button {
-        background: #0055a5;
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: 0.3s;
-    }
-
-    button:hover {
-        background: #0077cc;
-    }
-
-    form input, form textarea {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border-radius: 6px;
-        border: 1px solid #ccc;
-    }
-
-    footer {
-        background: #003366;
-        color: white;
-        text-align: center;
-        padding: 15px;
-        margin-top: 20px;
-    }
-
-    @keyframes fadeIn {
-        from {opacity: 0; transform: translateY(-20px);}
-        to {opacity: 1; transform: translateY(0);}
-    }
-
-    @media (max-width: 600px) {
-        header h1 {
-            font-size: 1.8rem;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fanáticos de League of Legends</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0b1460, #1f1f47);
+            color: #f0f4ff;
         }
-    }
-</style>
+        header {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 30px 20px;
+            text-align: center;
+            border-bottom: 2px solid #8b51ff;
+        }
+        h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 2px;
+        }
+        p.lead {
+            margin: 10px auto 0;
+            max-width: 760px;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #d6d9ff;
+        }
+        main {
+            padding: 30px 20px;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .card {
+            background: rgba(15, 22, 64, 0.95);
+            border: 1px solid rgba(139, 81, 255, 0.3);
+            border-radius: 14px;
+            padding: 24px;
+            margin-bottom: 20px;
+            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
+        }
+        .card h2 {
+            margin-top: 0;
+            color: #ffffff;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 18px;
+        }
+        .tag {
+            display: inline-block;
+            margin: 4px 6px 4px 0;
+            padding: 6px 12px;
+            border-radius: 999px;
+            background: rgba(139, 81, 255, 0.15);
+            color: #d6d9ff;
+            font-size: 0.95rem;
+        }
+        footer {
+            text-align: center;
+            padding: 18px 20px 32px;
+            color: #b1b7d8;
+            font-size: 0.95rem;
+        }
+        a.button {
+            display: inline-block;
+            margin-top: 12px;
+            background: #8b51ff;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 999px;
+            text-decoration: none;
+            transition: transform 0.2s ease, background 0.2s ease;
+        }
+        a.button:hover {
+            transform: translateY(-2px);
+            background: #a26dff;
+        }
+    </style>
 </head>
-
 <body>
-
-<header>
-    <h1>UTN - Trenque Lauquen</h1>
-    <p>Universidad Tecnológica Nacional</p>
-</header>
-
-<nav>
-    <a href="#inicio">Inicio</a>
-    <a href="#carreras">Carreras</a>
-    <a href="#inscripcion">Inscripción</a>
-    <a href="#contacto">Contacto</a>
-</nav>
-
-<div class="container">
-
-    <section id="inicio" class="card">
-        <h2>Bienvenidos</h2>
-        <p>Formamos profesionales en ingeniería y tecnología con una educación de calidad.</p>
-    </section>
-
-    <section id="carreras" class="card">
-        <h2>Carreras</h2>
-        <ul>
-            <li>Ingeniería en Sistemas</li>
-            <li>Ingeniería Industrial</li>
-            <li>Tecnicaturas</li>
-        </ul>
-    </section>
-
-    <section id="inscripcion" class="card">
-        <h2>Inscripción</h2>
-        <p>Las inscripciones están abiertas. ¡Sumate a la UTN!</p>
-        <button onclick="alert('Próximamente sistema de inscripción online')">
-            Inscribirme
-        </button>
-    </section>
-
-    <section id="contacto" class="card">
-        <h2>Contacto</h2>
-        <form onsubmit="enviarFormulario(event)">
-            <input type="text" placeholder="Nombre" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Mensaje" rows="4" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-</div>
-
-<footer>
-    <p>© 2026 UTN Trenque Lauquen</p>
-</footer>
-
-<script>
-function enviarFormulario(e) {
-    e.preventDefault();
-    alert("Mensaje enviado correctamente");
-}
-</script>
-
+    <header>
+        <h1>Bienvenido, invocador</h1>
+        <p class="lead">Un espacio para fanáticos de League of Legends: campeones, roles, noticias y estrategia con estilo de la Grieta del Invocador.</p>
+    </header>
+    <main>
+        <section class="card">
+            <h2>Campeones destacados</h2>
+            <div class="grid">
+                <div>
+                    <h3>Ahri</h3>
+                    <p>La campeona de hechizos y encanto sigue dominando con movilidad y magia.</p>
+                    <span class="tag">Mago</span>
+                    <span class="tag">Movilidad</span>
+                </div>
+                <div>
+                    <h3>Lee Sin</h3>
+                    <p>El monje ciego es perfecto para los que buscan jugadas espectaculares y control del mapa.</p>
+                    <span class="tag">Jungla</span>
+                    <span class="tag">Alta habilidad</span>
+                </div>
+                <div>
+                    <h3>Thresh</h3>
+                    <p>El guardián de las cadenas puede cambiar una batalla con un solo enganche bien ejecutado.</p>
+                    <span class="tag">Soporte</span>
+                    <span class="tag">Control</span>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Roles en la Grieta</h2>
+            <p>Elige tu estilo de juego y perfecciona tu rol:</p>
+            <div class="grid">
+                <div>
+                    <h3>Top</h3>
+                    <p>Tanques y duelistas: resistencia, fuerza y presencia en el carril superior.</p>
+                </div>
+                <div>
+                    <h3>Jungla</h3>
+                    <p>Controla la visión, gankea y marca la diferencia con objetivos como Dragones y Barón.</p>
+                </div>
+                <div>
+                    <h3>Mid</h3>
+                    <p>Potencia explosiva: magos y asesinos con capacidad de escalar y dominar peleas en mid.</p>
+                </div>
+                <div>
+                    <h3>ADC</h3>
+                    <p>Daño constante y posicionamiento clave. Los tiradores son el núcleo de la fase de líneas y las peleas en equipo.</p>
+                </div>
+                <div>
+                    <h3>Soporte</h3>
+                    <p>Protege, controla el mapa y mantiene vivo al equipo. Su impacto es decisivo en cada partida.</p>
+                </div>
+            </div>
+        </section>
+        <section class="card">
+            <h2>Consejo rápido</h2>
+            <p>Mantén visión en los puntos clave del mapa y aprovecha los objetivos neutrales para llevar la partida a tu favor. La comunicación con tu equipo es la mejor estrategia para ganar la Grieta del Invocador.</p>
+            <a class="button" href="Form.html">Ir al formulario de contacto</a>
+        </section>
+    </main>
+    <footer>
+        <p>Fan page creada para seguidores de League of Legends. ¿Querés otra sección con datos de skins o esports? Pídemela.</p>
+    </footer>
 </body>
 </html>
