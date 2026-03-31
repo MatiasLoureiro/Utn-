@@ -1,5 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,17 +12,20 @@
             background: linear-gradient(135deg, #0b1460, #1f1f47);
             color: #f0f4ff;
         }
+
         header {
-            background: rgba(0, 0, 0, 0.3);
-            padding: 30px 20px;
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg') center/cover no-repeat;
+            padding: 60px 20px;
             text-align: center;
             border-bottom: 2px solid #8b51ff;
         }
+
         h1 {
             margin: 0;
             font-size: 3rem;
             letter-spacing: 2px;
         }
+
         p.lead {
             margin: 10px auto 0;
             max-width: 760px;
@@ -29,11 +33,13 @@
             line-height: 1.6;
             color: #d6d9ff;
         }
+
         main {
             padding: 30px 20px;
             max-width: 980px;
             margin: 0 auto;
         }
+
         .card {
             background: rgba(15, 22, 64, 0.95);
             border: 1px solid rgba(139, 81, 255, 0.3);
@@ -42,15 +48,41 @@
             margin-bottom: 20px;
             box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
         }
+
         .card h2 {
             margin-top: 0;
             color: #ffffff;
         }
+
+        .card img {
+            width: 100%;
+            height: 160px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(139, 81, 255, 0.2);
+        }
+
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 18px;
+            gap: 24px;
         }
+
+        .grid>div {
+            background: rgba(0, 0, 0, 0.2);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(139, 81, 255, 0.15);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .grid>div:hover {
+            transform: translateY(-5px);
+            border-color: rgba(139, 81, 255, 0.6);
+        }
+
         .tag {
             display: inline-block;
             margin: 4px 6px 4px 0;
@@ -60,12 +92,14 @@
             color: #d6d9ff;
             font-size: 0.95rem;
         }
+
         footer {
             text-align: center;
             padding: 18px 20px 32px;
             color: #b1b7d8;
             font-size: 0.95rem;
         }
+
         a.button {
             display: inline-block;
             margin-top: 12px;
@@ -76,36 +110,41 @@
             text-decoration: none;
             transition: transform 0.2s ease, background 0.2s ease;
         }
+
         a.button:hover {
             transform: translateY(-2px);
             background: #a26dff;
         }
     </style>
 </head>
+
 <body>
     <header>
-        <h1>Bienvenido, invocador</h1>
-        <p class="lead">Un espacio para fanáticos de League of Legends: campeones, roles, noticias y estrategia con estilo de la Grieta del Invocador.</p>
+        <h1>Esta Pagina es para los platitas del lauti y el boshi</h1>
+        <p class="lead">Les Voy a explicar un par de cosas asi aprende un poquito</p>
     </header>
     <main>
         <section class="card">
             <h2>Campeones destacados</h2>
             <div class="grid">
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="Ahri">
                     <h3>Ahri</h3>
-                    <p>La campeona de hechizos y encanto sigue dominando con movilidad y magia.</p>
+                    <p>La campeona de hechizos, mas conocida como la zorrita boschi.</p>
                     <span class="tag">Mago</span>
                     <span class="tag">Movilidad</span>
                 </div>
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg" alt="Lee Sin">
                     <h3>Lee Sin</h3>
-                    <p>El monje ciego es perfecto para los que buscan jugadas espectaculares y control del mapa.</p>
+                    <p>El monje ciego es como el lauti encara a las gordas y ni las ve.</p>
                     <span class="tag">Jungla</span>
                     <span class="tag">Alta habilidad</span>
                 </div>
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg" alt="Thresh">
                     <h3>Thresh</h3>
-                    <p>El guardián de las cadenas puede cambiar una batalla con un solo enganche bien ejecutado.</p>
+                    <p>El guardián de las cadenas, tira el gancho donde ve una loli, como ustedes.</p>
                     <span class="tag">Soporte</span>
                     <span class="tag">Control</span>
                 </div>
@@ -116,22 +155,28 @@
             <p>Elige tu estilo de juego y perfecciona tu rol:</p>
             <div class="grid">
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg" alt="Top">
                     <h3>Top</h3>
                     <p>Tanques y duelistas: resistencia, fuerza y presencia en el carril superior.</p>
                 </div>
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg" alt="Jungla">
                     <h3>Jungla</h3>
                     <p>Controla la visión, gankea y marca la diferencia con objetivos como Dragones y Barón.</p>
                 </div>
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg" alt="Mid">
                     <h3>Mid</h3>
                     <p>Potencia explosiva: magos y asesinos con capacidad de escalar y dominar peleas en mid.</p>
                 </div>
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="ADC">
                     <h3>ADC</h3>
-                    <p>Daño constante y posicionamiento clave. Los tiradores son el núcleo de la fase de líneas y las peleas en equipo.</p>
+                    <p>Daño constante y posicionamiento clave. Los tiradores son el núcleo de la fase de líneas y las
+                        peleas en equipo.</p>
                 </div>
                 <div>
+                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg" alt="Soporte">
                     <h3>Soporte</h3>
                     <p>Protege, controla el mapa y mantiene vivo al equipo. Su impacto es decisivo en cada partida.</p>
                 </div>
@@ -139,12 +184,15 @@
         </section>
         <section class="card">
             <h2>Consejo rápido</h2>
-            <p>Mantén visión en los puntos clave del mapa y aprovecha los objetivos neutrales para llevar la partida a tu favor. La comunicación con tu equipo es la mejor estrategia para ganar la Grieta del Invocador.</p>
+            <p>Mantén visión en los puntos clave del mapa y aprovecha los objetivos neutrales para llevar la partida a
+                tu favor. La comunicación con tu equipo es la mejor estrategia para ganar la Grieta del Invocador.</p>
             <a class="button" href="Form.html">Ir al formulario de contacto</a>
         </section>
     </main>
     <footer>
-        <p>Fan page creada para seguidores de League of Legends. ¿Querés otra sección con datos de skins o esports? Pídemela.</p>
+        <p>Fan page creada para seguidores de League of Legends. ¿Querés otra sección con datos de skins o esports?
+            Pídemela.</p>
     </footer>
 </body>
+
 </html>
