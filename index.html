@@ -1,198 +1,317 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fanáticos de League of Legends</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #0b1460, #1f1f47);
-            color: #f0f4ff;
-        }
-
-        header {
-            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ashe_0.jpg') center/cover no-repeat;
-            padding: 60px 20px;
-            text-align: center;
-            border-bottom: 2px solid #8b51ff;
-        }
-
-        h1 {
-            margin: 0;
-            font-size: 3rem;
-            letter-spacing: 2px;
-        }
-
-        p.lead {
-            margin: 10px auto 0;
-            max-width: 760px;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            color: #d6d9ff;
-        }
-
-        main {
-            padding: 30px 20px;
-            max-width: 980px;
-            margin: 0 auto;
-        }
-
-        .card {
-            background: rgba(15, 22, 64, 0.95);
-            border: 1px solid rgba(139, 81, 255, 0.3);
-            border-radius: 14px;
-            padding: 24px;
-            margin-bottom: 20px;
-            box-shadow: 0 16px 30px rgba(0, 0, 0, 0.25);
-        }
-
-        .card h2 {
-            margin-top: 0;
-            color: #ffffff;
-        }
-
-        .card img {
-            width: 100%;
-            height: 160px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 15px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
-            border: 1px solid rgba(139, 81, 255, 0.2);
-        }
-
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 24px;
-        }
-
-        .grid>div {
-            background: rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            border-radius: 12px;
-            border: 1px solid rgba(139, 81, 255, 0.15);
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .grid>div:hover {
-            transform: translateY(-5px);
-            border-color: rgba(139, 81, 255, 0.6);
-        }
-
-        .tag {
-            display: inline-block;
-            margin: 4px 6px 4px 0;
-            padding: 6px 12px;
-            border-radius: 999px;
-            background: rgba(139, 81, 255, 0.15);
-            color: #d6d9ff;
-            font-size: 0.95rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 18px 20px 32px;
-            color: #b1b7d8;
-            font-size: 0.95rem;
-        }
-
-        a.button {
-            display: inline-block;
-            margin-top: 12px;
-            background: #8b51ff;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 999px;
-            text-decoration: none;
-            transition: transform 0.2s ease, background 0.2s ease;
-        }
-
-        a.button:hover {
-            transform: translateY(-2px);
-            background: #a26dff;
-        }
-    </style>
+    <title>Franco Colápinto - Alpine F1 Team 2026</title>
+    <link href="output.css" rel="stylesheet">
 </head>
+<body class="bg-gradient-to-br from-slate-950 via-blue-950 to-indigo-950 text-white font-sans">
+    <!-- Navbar -->
+    <nav class="bg-black bg-opacity-60 backdrop-blur-lg shadow-2xl fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <div class="flex items-center space-x-2">
+                    <div class="text-3xl font-bold text-indigo-400">⚡</div>
+                    <h1 class="text-2xl font-bold bg-gradient-to-r from-indigo-400 to-blue-400 bg-clip-text text-transparent">FC43</h1>
+                    <span class="text-sm text-indigo-300 ml-2">Alpine F1 Team</span>
+                </div>
+                <div class="hidden md:flex items-baseline space-x-6">
+                    <a href="#inicio" class="hover:text-indigo-400 transition text-sm font-medium">Inicio</a>
+                    <a href="#temporada" class="hover:text-indigo-400 transition text-sm font-medium">Temporada 2026</a>
+                    <a href="#resultados" class="hover:text-indigo-400 transition text-sm font-medium">Resultados</a>
+                    <a href="#equipo" class="hover:text-indigo-400 transition text-sm font-medium">Equipo</a>
+                    <a href="#galeria" class="hover:text-indigo-400 transition text-sm font-medium">Galería</a>
+                </div>
+                <div class="md:hidden">
+                    <button class="bg-indigo-600 inline-flex items-center justify-center p-2 rounded-md hover:bg-indigo-700 transition">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 
-<body>
-    <header>
-        <h1>Esta Pagina es para los platitas del lauti y el boshi</h1>
-        <p class="lead">Les Voy a explicar un par de cosas asi aprende un poquito</p>
-    </header>
-    <main>
-        <section class="card">
-            <h2>Campeones destacados</h2>
-            <div class="grid">
+    <!-- Hero Section -->
+    <section id="inicio" class="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ahri_0.jpg" alt="Ahri">
-                    <h3>Ahri</h3>
-                    <p>La campeona de hechizos, mas conocida como la zorrita boschi.</p>
-                    <span class="tag">Mago</span>
-                    <span class="tag">Movilidad</span>
+                    <h1 class="text-5xl md:text-7xl font-bold mb-4 leading-tight">
+                        Franco<br><span class="bg-gradient-to-r from-indigo-400 to-blue-400 bg-clip-text text-transparent">Colápinto</span>
+                    </h1>
+                    <p class="text-xl md:text-2xl mb-2 text-indigo-300">Piloto de Fórmula 1 - Alpine F1 Team</p>
+                    <p class="text-lg text-gray-300 mb-4">Número de Auto: 43</p>
+                    <p class="text-lg mb-6 max-w-lg leading-relaxed text-gray-400">¡Bienvenidos al portal oficial de fans! Aquí encontrarás toda la información sobre Franco, sus carreras en 2026, estadísticas en tiempo real y todo lo que necesitas saber sobre su temporada con Alpine.</p>
+                    <div class="flex space-x-4">
+                        <button class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg font-semibold transition shadow-lg">Seguir</button>
+                        <button class="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-semibold transition shadow-lg">Más Info</button>
+                    </div>
                 </div>
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/LeeSin_0.jpg" alt="Lee Sin">
-                    <h3>Lee Sin</h3>
-                    <p>El monje ciego es como el lauti encara a las gordas y ni las ve.</p>
-                    <span class="tag">Jungla</span>
-                    <span class="tag">Alta habilidad</span>
-                </div>
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_0.jpg" alt="Thresh">
-                    <h3>Thresh</h3>
-                    <p>El guardián de las cadenas, tira el gancho donde ve una loli, como ustedes.</p>
-                    <span class="tag">Soporte</span>
-                    <span class="tag">Control</span>
+                <div class="text-center">
+                    <div class="bg-gradient-to-br from-indigo-500 to-blue-500 p-1 rounded-xl shadow-2xl">
+                        <img src="https://deportv.gob.ar/thumbs/advf/imagenes/2025/05/681b235ce6380_450.webp" alt="Franco Colápinto" class="rounded-lg w-full h-auto object-cover">
+                    </div>
                 </div>
             </div>
-        </section>
-        <section class="card">
-            <h2>Roles en la Grieta</h2>
-            <p>Elige tu estilo de juego y perfecciona tu rol:</p>
-            <div class="grid">
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Garen_0.jpg" alt="Top">
-                    <h3>Top</h3>
-                    <p>Tanques y duelistas: resistencia, fuerza y presencia en el carril superior.</p>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="temporada" class="py-16 px-4 sm:px-6 lg:px-8 bg-black bg-opacity-30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Temporada 2026</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+                <div class="bg-gradient-to-br from-indigo-600 to-indigo-800 p-6 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2">43</div>
+                    <p class="text-gray-300">Número de Piloto</p>
                 </div>
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Vi_0.jpg" alt="Jungla">
-                    <h3>Jungla</h3>
-                    <p>Controla la visión, gankea y marca la diferencia con objetivos como Dragones y Barón.</p>
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-6 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2">3</div>
+                    <p class="text-gray-300">Carreras Disputadas</p>
                 </div>
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Zed_0.jpg" alt="Mid">
-                    <h3>Mid</h3>
-                    <p>Potencia explosiva: magos y asesinos con capacidad de escalar y dominar peleas en mid.</p>
+                <div class="bg-gradient-to-br from-purple-600 to-purple-800 p-6 rounded-lg text-center shadow-lg">
+                    <div class="text-4xl font-bold mb-2 text-yellow-300">1</div>
+                    <p class="text-gray-300">Puntos</p>
                 </div>
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jinx_0.jpg" alt="ADC">
-                    <h3>ADC</h3>
-                    <p>Daño constante y posicionamiento clave. Los tiradores son el núcleo de la fase de líneas y las
-                        peleas en equipo.</p>
-                </div>
-                <div>
-                    <img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Lulu_0.jpg" alt="Soporte">
-                    <h3>Soporte</h3>
-                    <p>Protege, controla el mapa y mantiene vivo al equipo. Su impacto es decisivo en cada partida.</p>
+                <div class="bg-gradient-to-br from-cyan-600 to-cyan-800 p-6 rounded-lg text-center shadow-lg">
+                    <div class="text-3xl font-bold mb-2">P15</div>
+                    <p class="text-gray-300">Posición Campeonato</p>
                 </div>
             </div>
-        </section>
-        <section class="card">
-            <h2>Consejo rápido</h2>
-            <p>Mantén visión en los puntos clave del mapa y aprovecha los objetivos neutrales para llevar la partida a
-                tu favor. La comunicación con tu equipo es la mejor estrategia para ganar la Grieta del Invocador.</p>
-            <a class="button" href="Form.html">Ir al formulario de contacto</a>
-        </section>
-    </main>
-    <footer>
-        <p>Fan page creada para seguidores de League of Legends. ¿Querés otra sección con datos de skins o esports?
-            Pídemela.</p>
+        </div>
+    </section>
+
+    <!-- Recent Results -->
+    <section id="resultados" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Resultados 2026</h2>
+            
+            <!-- Results Table -->
+            <div class="overflow-x-auto mb-12">
+                <table class="w-full">
+                    <thead>
+                        <tr class="bg-indigo-600 bg-opacity-30 border-b border-indigo-500">
+                            <th class="px-4 py-4 text-left font-bold">Gran Premio</th>
+                            <th class="px-4 py-4 text-center font-bold">Carrera</th>
+                            <th class="px-4 py-4 text-center font-bold">Posición</th>
+                            <th class="px-4 py-4 text-center font-bold">Puntos</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="border-b border-indigo-500 border-opacity-30 hover:bg-white hover:bg-opacity-10 transition">
+                            <td class="px-4 py-4">🇦🇺 Australia</td>
+                            <td class="px-4 py-4 text-center">1</td>
+                            <td class="px-4 py-4 text-center"><span class="bg-red-500 text-white px-3 py-1 rounded-full font-bold">P14</span></td>
+                            <td class="px-4 py-4 text-center text-gray-400">0</td>
+                        </tr>
+                        <tr class="border-b border-indigo-500 border-opacity-30 hover:bg-white hover:bg-opacity-10 transition">
+                            <td class="px-4 py-4">🇨🇳 China</td>
+                            <td class="px-4 py-4 text-center">2</td>
+                            <td class="px-4 py-4 text-center"><span class="bg-green-500 text-white px-3 py-1 rounded-full font-bold">P10</span></td>
+                            <td class="px-4 py-4 text-center text-yellow-300 font-bold">+1</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Detailed Results Cards -->
+            <div class="space-y-4">
+                <div class="bg-gradient-to-r from-indigo-600 to-blue-600 p-6 rounded-lg border-2 border-indigo-400 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <p class="text-gray-200">Gran Premio</p>
+                            <h3 class="text-2xl font-bold">🇦🇺 Australia</h3>
+                            <p class="text-sm text-gray-300">Albert Park Circuit</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-gray-200">Posición Final</p>
+                            <p class="text-5xl font-bold">14</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-gray-200">Puntos Otorgados</p>
+                            <p class="text-3xl font-bold text-gray-400">0</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-600 to-emerald-600 p-6 rounded-lg border-2 border-green-400 shadow-lg">
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div>
+                            <p class="text-gray-200">Gran Premio</p>
+                            <h3 class="text-2xl font-bold">🇨🇳 China</h3>
+                            <p class="text-sm text-gray-300">Shanghai International Circuit</p>
+                        </div>
+                        <div class="text-center">
+                            <p class="text-gray-200">Posición Final</p>
+                            <p class="text-5xl font-bold">10</p>
+                        </div>
+                        <div class="text-right">
+                            <p class="text-gray-200">Puntos Otorgados</p>
+                            <p class="text-3xl font-bold text-yellow-300">+1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- F1 Calendar -->
+    <section id="calendario" class="py-16 px-4 sm:px-6 lg:px-8 bg-black bg-opacity-30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Próximas Carreras 2026</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gradient-to-br from-indigo-600 to-indigo-800 p-4 rounded-lg text-center hover:shadow-xl transition">
+                    <p class="text-gray-300">Próxima</p>
+                    <h3 class="text-2xl font-bold mt-2">🇯🇵 GP Japón</h3>
+                    <p class="text-indigo-200 font-semibold mt-2">Suzuka Circuit</p>
+                </div>
+                <div class="bg-gradient-to-br from-blue-600 to-blue-800 p-4 rounded-lg text-center hover:shadow-xl transition">
+                    <p class="text-gray-300">Carrera</p>
+                    <h3 class="text-2xl font-bold mt-2">🇧🇭 GP Bahréin</h3>
+                    <p class="text-blue-200 font-semibold mt-2">Sakhir Circuit</p>
+                </div>
+                <div class="bg-gradient-to-br from-purple-600 to-purple-800 p-4 rounded-lg text-center hover:shadow-xl transition">
+                    <p class="text-gray-300">Carrera</p>
+                    <h3 class="text-2xl font-bold mt-2">🇸🇦 GP Arabia Saudita</h3>
+                    <p class="text-purple-200 font-semibold mt-2">Jeddah Corniche Circuit</p>
+                </div>
+                <div class="bg-gradient-to-br from-pink-600 to-pink-800 p-4 rounded-lg text-center hover:shadow-xl transition">
+                    <p class="text-gray-300">Carrera</p>
+                    <h3 class="text-2xl font-bold mt-2">🇦🇪 GP Abu Dabi</h3>
+                    <p class="text-pink-200 font-semibold mt-2">Yas Marina Circuit</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team & Car Section -->
+    <section id="equipo" class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Equipo Alpine F1 2026</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-12">
+                <div class="bg-gradient-to-br from-indigo-600 to-blue-800 p-1 rounded-xl shadow-2xl">
+                    <img src="https://via.placeholder.com/500x600/1e1b4b/3b82f6?text=Alpine+A526" alt="Alpine A526" class="rounded-lg w-full h-auto object-cover">
+                </div>
+                <div class="space-y-4">
+                    <div class="bg-white bg-opacity-10 backdrop-blur p-4 rounded-lg border border-indigo-500">
+                        <h3 class="font-bold text-indigo-400 mb-2">🏭 Equipo</h3>
+                        <p>Alpine F1 Team (Renault)</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur p-4 rounded-lg border border-blue-500">
+                        <h3 class="font-bold text-blue-400 mb-2">👤 Piloto Principal</h3>
+                        <p>Franco Colápinto - Coche #43</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur p-4 rounded-lg border border-purple-500">
+                        <h3 class="font-bold text-purple-400 mb-2">🏁 Compañero de Equipo</h3>
+                        <p> Pierre Gasly - Coche #10</p>
+                    </div>
+                    <div class="bg-white bg-opacity-10 backdrop-blur p-4 rounded-lg border border-cyan-500">
+                        <h3 class="font-bold text-cyan-400 mb-2">⚙️ Power Unit</h3>
+                        <p>Renault E-Tech Power Unit</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Car Specifications -->
+            <div class="bg-gradient-to-r from-indigo-900 to-blue-900 p-6 rounded-lg">
+                <h3 class="text-2xl font-bold mb-6">Especificaciones del Auto</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div class="bg-black bg-opacity-30 p-4 rounded text-center">
+                        <p class="text-gray-400">Peso Mínimo</p>
+                        <p class="text-2xl font-bold text-indigo-300">798 kg</p>
+                    </div>
+                    <div class="bg-black bg-opacity-30 p-4 rounded text-center">
+                        <p class="text-gray-400">Clasificación</p>
+                        <p class="text-2xl font-bold text-blue-300">A526</p>
+                    </div>
+                    <div class="bg-black bg-opacity-30 p-4 rounded text-center">
+                        <p class="text-gray-400">Fabricante</p>
+                        <p class="text-2xl font-bold text-cyan-300">Alpine Racing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galeria" class="py-16 px-4 sm:px-6 lg:px-8 bg-black bg-opacity-30">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-4xl font-bold text-center mb-12">Galería de Fotos</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-64">
+                    <img src="https://via.placeholder.com/500x400/312e81/818cf8?text=Franco+en+la+pista" alt="Franco en la pista" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center">
+                        <p class="text-white font-bold opacity-0 group-hover:opacity-100 transition">Franco en la pista</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-64">
+                    <img src="https://via.placeholder.com/500x400/1e40af/60a5fa?text=Alpine+A526" alt="Alpine A526" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center">
+                        <p class="text-white font-bold opacity-0 group-hover:opacity-100 transition">Alpine A526</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-xl cursor-pointer h-64">
+                    <img src="https://via.placeholder.com/500x400/6b21a8/c084fc?text=Logros+2026" alt="Logros 2026" class="w-full h-full object-cover transform group-hover:scale-105 transition duration-300">
+                    <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 transition flex items-center justify-center">
+                        <p class="text-white font-bold opacity-0 group-hover:opacity-100 transition">Logros 2026</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-16 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto bg-gradient-to-r from-indigo-600 to-blue-600 p-8 rounded-xl shadow-2xl text-center">
+            <h2 class="text-3xl font-bold mb-4">¡Mantente Actualizado!</h2>
+            <p class="mb-6 text-lg">Recibe las últimas noticias, resultados y actualizaciones sobre Franco Colápinto en tu correo</p>
+            <div class="flex flex-col md:flex-row gap-4">
+                <input type="email" placeholder="Tu correo electrónico" class="flex-1 px-4 py-3 rounded-lg text-black focus:outline-none focus:ring-2 focus:ring-indigo-300">
+                <button class="bg-black hover:bg-gray-800 px-8 py-3 rounded-lg font-semibold transition">Suscribirse</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 px-4 sm:px-6 lg:px-8 bg-black bg-opacity-60 border-t border-indigo-500 border-opacity-30">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold text-indigo-400 mb-4">FC43</h3>
+                    <p class="text-gray-400">Portal de fans oficial de Franco Colápinto - Alpine F1 Team 2026</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Enlaces F1</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-indigo-400 transition">Formula1.com</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Alpine F1</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Calendario F1</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Síguenos</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-blue-400 transition">Twitter/X</a></li>
+                        <li><a href="#" class="hover:text-pink-500 transition">Instagram</a></li>
+                        <li><a href="#" class="hover:text-blue-500 transition">TikTok</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Contacto</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-indigo-400 transition">info@fc43.com</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition">Contactanos</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-white border-opacity-10 pt-8 text-center text-gray-500">
+                <p>&copy; 2026 Franco Colápinto Fans. Este es un sitio de fans no oficial. F1, Alpine F1 Team y sus logos son marcas registradas de FIA.</p>
+                <p class="mt-2 text-sm">Datos actualizados a Abril de 2026</p>
+            </div>
+        </div>
     </footer>
 </body>
-
 </html>
