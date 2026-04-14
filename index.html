@@ -82,7 +82,7 @@
                 </div>
             </div>
 
-            <div class="mt-10 bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 border border-indigo-500 border-opacity-20 rounded-3xl p-6 shadow-2xl shadow-indigo-900/50 backdrop-blur-sm">
+            <div class="mt-16 bg-gradient-to-br from-slate-900 via-slate-950 to-indigo-950 border border-indigo-500 border-opacity-20 rounded-3xl p-6 shadow-2xl shadow-indigo-900/50 backdrop-blur-sm">
                 <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-6">
                     <div>
                         <p class="text-sm uppercase tracking-widest text-indigo-300">Campeonato 2026</p>
@@ -97,45 +97,221 @@
                     <table class="w-full text-left border-separate border-spacing-0">
                         <thead>
                             <tr class="bg-indigo-600/20 text-indigo-100">
-                                <th class="px-4 py-3 text-sm uppercase tracking-wide">#</th>
+                                <th class="px-4 py-3 text-sm uppercase tracking-wide">Pos</th>
+                                <th class="px-4 py-3 text-sm uppercase tracking-wide">País</th>
                                 <th class="px-4 py-3 text-sm uppercase tracking-wide">Piloto</th>
                                 <th class="px-4 py-3 text-sm uppercase tracking-wide">Equipo</th>
                                 <th class="px-4 py-3 text-sm uppercase tracking-wide text-right">Puntos</th>
+                                <th class="px-4 py-3 text-sm uppercase tracking-wide text-right">Triunfos</th>
+                                <th class="px-4 py-3 text-sm uppercase tracking-wide text-right">Podios</th>
                             </tr>
                         </thead>
                         <tbody class="divide-y divide-indigo-500/20 text-slate-200">
                             <tr class="bg-slate-950/50 hover:bg-indigo-500/10 transition">
                                 <td class="px-4 py-4 font-bold text-indigo-300">1</td>
-                                <td class="px-4 py-4">Max Verstappen</td>
-                                <td class="px-4 py-4 text-slate-400">Red Bull</td>
-                                <td class="px-4 py-4 text-right font-bold text-white">312</td>
+                                <td class="px-4 py-4">Italia</td>
+                                <td class="px-4 py-4">A. Antonelli</td>
+                                <td class="px-4 py-4 text-slate-400">Mercedes</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">72</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">2</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">3</td>
                             </tr>
                             <tr class="hover:bg-indigo-500/10 transition">
                                 <td class="px-4 py-4 font-bold text-indigo-300">2</td>
-                                <td class="px-4 py-4">Lando Norris</td>
-                                <td class="px-4 py-4 text-slate-400">McLaren</td>
-                                <td class="px-4 py-4 text-right font-bold text-white">278</td>
+                                <td class="px-4 py-4">Reino Unido</td>
+                                <td class="px-4 py-4">G. Russell</td>
+                                <td class="px-4 py-4 text-slate-400">Mercedes</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">63</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">1</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">2</td>
                             </tr>
                             <tr class="hover:bg-indigo-500/10 transition">
                                 <td class="px-4 py-4 font-bold text-indigo-300">3</td>
-                                <td class="px-4 py-4">Charles Leclerc</td>
+                                <td class="px-4 py-4">Mónaco</td>
+                                <td class="px-4 py-4">C. Leclerc</td>
                                 <td class="px-4 py-4 text-slate-400">Ferrari</td>
-                                <td class="px-4 py-4 text-right font-bold text-white">250</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">49</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">2</td>
                             </tr>
                             <tr class="hover:bg-indigo-500/10 transition">
                                 <td class="px-4 py-4 font-bold text-indigo-300">4</td>
-                                <td class="px-4 py-4">Fernando Alonso</td>
-                                <td class="px-4 py-4 text-slate-400">Aston Martin</td>
-                                <td class="px-4 py-4 text-right font-bold text-white">233</td>
+                                <td class="px-4 py-4">Reino Unido</td>
+                                <td class="px-4 py-4">L. Hamilton</td>
+                                <td class="px-4 py-4 text-slate-400">Ferrari</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">41</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">1</td>
                             </tr>
-                            <tr class="bg-gradient-to-r from-indigo-700/20 to-cyan-700/15 hover:from-indigo-600/30 hover:to-cyan-600/20 transition">
-                                <td class="px-4 py-4 font-bold text-indigo-200">5</td>
-                                <td class="px-4 py-4 font-semibold text-white">Franco Colápinto</td>
-                                <td class="px-4 py-4 text-slate-200">Alpine</td>
-                                <td class="px-4 py-4 text-right font-bold text-yellow-300">1</td>
+                            <tr class="hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">5</td>
+                                <td class="px-4 py-4">Reino Unido</td>
+                                <td class="px-4 py-4">L. Norris</td>
+                                <td class="px-4 py-4 text-slate-400">McLaren</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">25</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">6</td>
+                                <td class="px-4 py-4">Australia</td>
+                                <td class="px-4 py-4">O. Piastri</td>
+                                <td class="px-4 py-4 text-slate-400">McLaren</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">21</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">1</td>
+                            </tr>
+                            <tr class="hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">7</td>
+                                <td class="px-4 py-4">Reino Unido</td>
+                                <td class="px-4 py-4">O. Bearman</td>
+                                <td class="px-4 py-4 text-slate-400">Haas</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">17</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">8</td>
+                                <td class="px-4 py-4">Francia</td>
+                                <td class="px-4 py-4">P. Gasly</td>
+                                <td class="px-4 py-4 text-slate-400">Alpine</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">15</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">9</td>
+                                <td class="px-4 py-4">Países Bajos</td>
+                                <td class="px-4 py-4">M. Verstappen</td>
+                                <td class="px-4 py-4 text-slate-400">Red Bull</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">12</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">10</td>
+                                <td class="px-4 py-4">Nueva Zelanda</td>
+                                <td class="px-4 py-4">L. Lawson</td>
+                                <td class="px-4 py-4 text-slate-400">RB</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">10</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">11</td>
+                                <td class="px-4 py-4">Reino Unido</td>
+                                <td class="px-4 py-4">A. Lindblad</td>
+                                <td class="px-4 py-4 text-slate-400">RB</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">4</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">12</td>
+                                <td class="px-4 py-4">Francia</td>
+                                <td class="px-4 py-4">I. Hadjar</td>
+                                <td class="px-4 py-4 text-slate-400">Red Bull</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">4</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">13</td>
+                                <td class="px-4 py-4">Brasil</td>
+                                <td class="px-4 py-4">G. Bortoleto</td>
+                                <td class="px-4 py-4 text-slate-400">Audi</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">2</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">14</td>
+                                <td class="px-4 py-4">España</td>
+                                <td class="px-4 py-4">C. Sainz Jr.</td>
+                                <td class="px-4 py-4 text-slate-400">Williams</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">2</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">15</td>
+                                <td class="px-4 py-4">Francia</td>
+                                <td class="px-4 py-4">E. Ocon</td>
+                                <td class="px-4 py-4 text-slate-400">Haas</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">1</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">16</td>
+                                <td class="px-4 py-4">Argentina</td>
+                                <td class="px-4 py-4">F. Colapinto</td>
+                                <td class="px-4 py-4 text-slate-400">Alpine</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">1</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">17</td>
+                                <td class="px-4 py-4">Alemania</td>
+                                <td class="px-4 py-4">N. Hulkenberg</td>
+                                <td class="px-4 py-4 text-slate-400">Audi</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">18</td>
+                                <td class="px-4 py-4">Tailandia</td>
+                                <td class="px-4 py-4">A. Albon</td>
+                                <td class="px-4 py-4 text-slate-400">Williams</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">19</td>
+                                <td class="px-4 py-4">Finlandia</td>
+                                <td class="px-4 py-4">V. Bottas</td>
+                                <td class="px-4 py-4 text-slate-400">Cadillac</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">20</td>
+                                <td class="px-4 py-4">México</td>
+                                <td class="px-4 py-4">S. Perez</td>
+                                <td class="px-4 py-4 text-slate-400">Cadillac</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">21</td>
+                                <td class="px-4 py-4">España</td>
+                                <td class="px-4 py-4">F. Alonso</td>
+                                <td class="px-4 py-4 text-slate-400">Aston Martin</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                            </tr>
+                            <tr class="hidden more-pilot-row hover:bg-indigo-500/10 transition">
+                                <td class="px-4 py-4 font-bold text-indigo-300">22</td>
+                                <td class="px-4 py-4">Canadá</td>
+                                <td class="px-4 py-4">L. Stroll</td>
+                                <td class="px-4 py-4 text-slate-400">Aston Martin</td>
+                                <td class="px-4 py-4 text-right font-bold text-white">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
+                                <td class="px-4 py-4 text-right text-indigo-200">0</td>
                             </tr>
                         </tbody>
                     </table>
+                </div>
+                <div class="mt-5 text-right">
+                    <button id="leaderboard-toggle" class="inline-flex items-center justify-center rounded-full bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-lg shadow-indigo-900/30 hover:bg-indigo-500 transition">
+                        Ver más pilotos
+                    </button>
                 </div>
             </div>
         </div>
@@ -370,5 +546,23 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        const toggleButton = document.getElementById('leaderboard-toggle');
+        const hiddenRows = document.querySelectorAll('.more-pilot-row');
+        let expanded = false;
+
+        if (toggleButton) {
+            toggleButton.addEventListener('click', () => {
+                expanded = !expanded;
+
+                hiddenRows.forEach(row => {
+                    row.classList.toggle('hidden', !expanded);
+                });
+
+                toggleButton.textContent = expanded ? 'Ver menos pilotos' : 'Ver más pilotos';
+            });
+        }
+    </script>
 </body>
 </html>
